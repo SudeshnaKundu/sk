@@ -1,0 +1,205 @@
+body {
+    font-family: Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: rgb(39, 37, 37);
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.freeze {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgba(255,255,200,0.9);
+}
+
+.freeze strong {
+    /* position: absolute; */
+    color: rgb(216, 107, 107);
+    font-size: 2rem;
+    padding-left: 1rem;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    /* height: 85vh; */
+    background: rgb(12, 14, 8);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: -1;
+}
+
+.about .line-1 {
+    font-family: optima;
+    font-size: 4rem;
+    padding: 2rem;
+    font-weight: 200;
+    color: rgb(104, 99, 107);
+}
+.about .line-2 {
+    font-family: candara;
+    font-size: 3rem;
+    padding: 2rem;
+    font-weight: 500;
+    color: rgb(176, 111, 214);
+}
+.about p {
+    font-family: candara;
+    font-size: 2rem;
+    padding: 1rem;
+    width: 70%;
+    font-weight: 200;
+    color: rgb(59, 209, 104);
+}
+
+.about a {
+    text-decoration: none;
+    background: rgb(212, 15, 15);
+    color: rgb(248, 244, 244);
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+    border-bottom: 3px solid #3d3d3d;
+    border-radius: 5px;
+}
+
+.about a:hover {
+    color: rgba(248, 244, 244, 0.7);
+}
+
+.skills{
+    background: rgb(12, 7, 61);
+    /* position: relative; */
+    padding-top: 1rem;
+}
+
+.skills h1,
+.education h1 {
+    padding-left: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    color: rgb(71, 241, 37);
+}
+.skills h2 {
+    padding-left: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: rgb(150, 156, 94);
+}
+
+.skills .contain{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.skills .contain .fig {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1rem;
+    color: seashell;
+}
+
+.education .contain{
+    display: grid;
+    grid-template-rows: max-content;
+    padding: 1rem;
+    background: rgb(183, 190, 147);
+    border: 3px solid #3d3d3d;
+    border-radius: 10px;
+}
+
+.education .contain .name {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: rgb(119, 38, 83);
+    padding-bottom: 2rem;
+}
+.education .contain .pos {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: rgb(70, 85, 71);
+    padding-bottom: 1rem;
+}
+.education .contain .marks {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: rgb(112, 65, 197);
+    padding-bottom: 1rem;
+}
+
+.contacts {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts .top {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    padding-bottom: 1rem;
+    color: seashell;
+}
+
+.contacts .icon {
+    color: seashell;
+    text-decoration: none;
+    padding-bottom: 3rem;
+}
+
+.contacts .icon a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: seashell;
+}
+
+.contacts .phone,
+.contacts .mail {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 1rem;
+    color: seashell;
+}
+
+
+
+
+
+/* New Styling */
+
+.freeze-new
+{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(255,255,200,0.9);
+    padding: 3px;
+}
+
+.anchors
+{
+    margin-left: 1px;
+    background-color: rgba(100, 255, 255, 0.6);
+    color: saddlebrown;
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 30px;
+}

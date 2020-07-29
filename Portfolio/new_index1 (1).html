@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            background: rgb(39, 37, 37);
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .freeze-new {
+            position: relative;
+            padding-top: 1rem;
+            padding-bottom: 3rem;
+        }
+
+        .freeze-new strong {
+            position: absolute;
+            color: rgb(216, 107, 107);
+            font-size: 2rem;
+            padding-left: 1rem;
+        }
+
+        .about {
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            background: rgb(12, 14, 8);
+            margin: auto;
+            display: grid;
+            grid-template-rows: max-content;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .about .line-1 {
+            font-family: optima;
+            font-size: 4rem;
+            padding: 2rem;
+            font-weight: 200;
+            color: rgb(104, 99, 107);
+        }
+        .about .line-2 {
+            font-family: candara;
+            font-size: 3rem;
+            padding: 2rem;
+            font-weight: 500;
+            color: rgb(176, 111, 214);
+        }
+        .about p {
+            font-family: candara;
+            font-size: 2rem;
+            padding: 1rem;
+            width: 70%;
+            font-weight: 200;
+            color: rgb(59, 209, 104);
+            margin: auto;
+        }
+
+        .about a {
+            width: 10rem;
+            text-decoration: none;
+            background: rgb(212, 15, 15);
+            color: rgb(248, 244, 244);
+            font-size: 2rem;
+            padding: 0.5rem 2rem;
+            border-bottom: 3px solid #3d3d3d;
+            border-radius: 5px;
+            margin: auto;
+        }
+
+        .about a:hover {
+            color: rgba(248, 244, 244, 0.7);
+        }
+
+        .skills{
+            background: rgb(12, 7, 61);
+            position: relative;
+            padding-top: 1rem;
+        }
+
+        .skills h1,
+        .education h1 {
+            padding-left: 1rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2rem;
+            color: rgb(71, 241, 37);
+        }
+        .skills h2 {
+            padding-left: 2rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.5rem;
+            color: rgb(150, 156, 94);
+        }
+
+        .skills .contain{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: flex-start;
+        }
+
+        .skills .contain .fig {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            font-size: 1rem;
+            color: seashell;
+        }
+
+        .education .contain{
+            display: grid;
+            grid-template-rows: max-content;
+            padding: 1rem;
+            background: rgb(183, 190, 147);
+            border: 3px solid #3d3d3d;
+            border-radius: 10px;
+        }
+
+        .education .contain .name {
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 500;
+            font-size: 2.5rem;
+            color: rgb(119, 38, 83);
+            padding-bottom: 2rem;
+        }
+        .education .contain .pos {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 500;
+            font-size: 1.2rem;
+            color: rgb(70, 85, 71);
+            padding-bottom: 1rem;
+        }
+        .education .contain .marks {
+            font-family: sans-serif;
+            font-weight: 500;
+            font-size: 2rem;
+            color: rgb(112, 65, 197);
+            padding-bottom: 1rem;
+        }
+
+        .contacts {
+            padding: 5rem 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contacts .top {
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+            padding-bottom: 1rem;
+            color: seashell;
+        }
+
+        .contacts .icon {
+            color: seashell;
+            text-decoration: none;
+            padding-bottom: 3rem;
+        }
+
+        .contacts .icon a {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            color: seashell;
+        }
+
+        .contacts .phone,
+        .contacts .mail {
+            font-size: 1.2rem;
+            font-weight: 600;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 1rem;
+            color: seashell;
+        }
+
+        @media(max-width: 1000px) {
+            .about{
+                height: auto;
+                background: rgb(12, 14, 8);
+                position: relative;
+                padding-top: 1rem;
+                padding-bottom: 2rem;
+            }
+
+            .skills .contain {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                align-items: flex-start;
+            }
+        }
+    </style>
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="freeze-new">
+        <h3>
+            <button><i class="fa fa-bars fa-1x" id="toggler" style="color: black; padding: 5px;"></i></button>
+            
+            <strong style="text-align: right; padding: 5px;">SUDESHNA KUNDU</strong>
+        </h3>
+        <div id="parent" class="anchor-container">
+            <!-- <h4 id="a"><a class="anchors" href="#about">About</a></h4> -->
+            <!-- <h4 id="s"><a class="anchors" href="#skills">Skills</a></h4> -->
+            <!-- <h4 id="e"><a class="anchors" href="#education">Education</a></h4> -->
+        </div>
+    </div>
+
+    <div id="about" class="about">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <div class="line-1">About Me</div>
+        <div class="line-2">Hello, I'm Sudeshna Kundu</div>
+        <p class="content">I am a Web Developer, who loves to learn about new technologies. I am currently in my 1st year, pursuing B.Tech. in Mining Engineering at IIT(ISM) Dhanbad. I am fond of listening to music and painting is one of my hobbies.</p>
+        <a  href="CV_2020-07-29-061422.pdf" download="Resume">Resume</a>
+    </div>
+
+    <div id="skills" class="skills">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h1>Skills</h1>
+        <h2>Programming Languages</h2>
+        <div class="contain">
+            <div class="fig">
+                <img src="C.jpeg" height="180">
+                C (Intermediate)
+            </div>
+            <div class="fig">
+                <img src="Java.jpg" height="160">
+                Java (Beginner)
+            </div>
+            <div class="fig">
+                <img src="Matlab.jpg" height="180">
+                MATLAB (Beginner)
+            </div>
+        </div>
+        <h2>Web Development</h2>
+        <div class="contain">
+            <div class="fig">
+                <img src="Html.jpg" height="180">
+                HTML
+            </div>
+            <div class="fig">
+                <img src="CSS.jpg" height="180">
+                CSS
+            </div>
+            <div class="fig">
+                <img src="Javascript.jpg" height="180">
+                Javascript
+            </div>
+            <div class="fig">
+                <img src="ReactJs.jpg" height="180">
+                React JS
+            </div>
+        </div>
+        <h2>Other Skills</h2>
+        <div class="contain">
+            <div class="fig">
+                <img src="AdobeIllu.jpg" height="160">
+                Adobe Illustrator
+            </div>
+        </div>
+    </div>
+
+    <div id="education" class="education">
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h1>Education</h1>
+        <div class="contain">
+            <div class="name"><strong>Ichapur Girls High School</strong></div>
+            <div class="pos"><em>Class 10 (WBBSE)</em></div>
+            <div class="marks">Percentage: 93%</div>
+        </div>
+
+        <div class="contain">
+            <div class="name"><strong>Anandamath Vidyapith</strong></div>
+            <div class="pos"><em>Class 12 (WBCHSE)</em></div>
+            <div class="marks">Percentage: 91%</div>
+        </div>
+
+        <div class="contain">
+            <div class="name"><strong><a href="https://www.iitism.ac.in/" target="blank">Institute of Technology Dhanbad</a></strong>
+                <br>(Indian School of Mines)
+            </div>
+            <div class="pos"><em>Pursuing B.Tech. in</em></div>
+            <div class="marks">Mining Engineering (Expected graduation: 2023)</div>
+        </div>
+
+    </div>
+    <em>    
+        <div class="contacts">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div class="top">Follow me on</div>
+            <div class="icon">
+                <a href="https://www.facebook.com/sudeshna.kundu.589"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>  </a>
+                <a href="https://www.linkedin.com/in/sudeshna-kundu-61490b1a8">  <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>  </a>
+                <a href="sudeshna.bristikundu@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i>  </a>
+            </div>
+            <div class="phone">
+                <i class="fa fa-phone"></i>
+                Contact: 7595033047
+            </div>
+            <div class="mail">
+                <i class="fa fa-envelope"></i>
+                Email: sudeshna.bristikundu@gmail.com
+            </div>
+        </div>
+    </em>
+
+    <script type="text/javascript">
+        function testToggler()
+        {
+            var parent = document.getElementById("parent");
+            console.log("ENTRY:"+parent.childElementCount);
+            if(parent.childElementCount === 0)
+            {
+                var AH = document.createElement("h4");
+                var A = document.createElement("a");
+                A.setAttribute("class", "anchors");
+                A.setAttribute("href", "#about");
+                var a = document.createTextNode("About");
+                A.appendChild(a);
+                AH.appendChild(A);
+                parent.appendChild(AH);
+
+                var SH = document.createElement("h4");
+                var S = document.createElement("a");
+                S.setAttribute("class", "anchors");
+                S.setAttribute("href", "#skills");
+                var s = document.createTextNode("Skills");
+                S.appendChild(s);
+                SH.appendChild(S);
+                parent.appendChild(SH);
+
+                var EH = document.createElement("h4");
+                var E = document.createElement("a");
+                E.setAttribute("class", "anchors");
+                E.setAttribute("href", "#education");
+                var e = document.createTextNode("Education");
+                E.appendChild(e);
+                EH.appendChild(E);
+                parent.appendChild(EH);
+
+                console.log("IF:"+parent.childElementCount);
+            }
+            else
+            {
+                console.log("NODE 1:"+parent.childElementCount); parent.removeChild(parent.childNodes[0]);
+                console.log("NODE 2:"+parent.childElementCount); parent.removeChild(parent.childNodes[0]);
+                console.log("NODE 3:"+parent.childElementCount); parent.removeChild(parent.childNodes[0]);
+
+                console.log("ELSE:"+parent.childElementCount);
+            }
+        }
+        function createNewElement(id)
+        {
+            var h = document.getElementById(id);
+        }
+
+        var x = document.getElementById("toggler");
+        x.addEventListener("click", testToggler);
+    </script>
+</body>
+</html>
